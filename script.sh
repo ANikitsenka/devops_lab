@@ -44,4 +44,3 @@ install_pyenv
 configure_bashrc
 install_environments_py
 create_virt_envs_py
-/vagrant/py_script.py
