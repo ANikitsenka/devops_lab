@@ -35,8 +35,6 @@ install_environments_py() {
 create_virt_envs_py() {
     pyenv virtualenv 2.7.17 venv2.7.17
     pyenv virtualenv 3.8.0 venv3.8.0
-    mkdir venv2.7 && $(echo 'Virtualenv directory' > venv2.7/README)
-    mkdir venv3.8 && $(echo 'Virtualenv directory' > venv3.8/README)
 }
 
 install_depends
