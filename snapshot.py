@@ -62,8 +62,8 @@ def text_log(k):
     file = open('log.txt', 'a+')
     file.write(
         'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu() +
-        '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: ' + 
-        Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
+        '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: '
+        + Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
 
 
 def execute():
