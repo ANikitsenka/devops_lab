@@ -52,8 +52,8 @@ def json_log(j):
     log.clear()
     ss = s + ' ' + str(j)
     log[ss] = [{'Time': Logger.timestamp()}]
-    log[ss].append({'CPU, %': Logger.cpu(), 'SWAP, %': Logger.swap(), 'Memory': Logger.v_mem(), 'Disk': Logger.disk(),
-                    'Received, k/bytes': Logger.net()})
+    log[ss].append({'CPU, %': Logger.cpu(), 'SWAP, %': Logger.swap(), 'Memory': Logger.v_mem(), 
+                    'Disk': Logger.disk(), 'Received, k/bytes': Logger.net()})
     with open('log.json', 'a+') as outfile:
         json.dump(log, outfile, indent=4)
 
@@ -61,9 +61,9 @@ def json_log(j):
 def text_log(k):
     file = open('log.txt', 'a+')
     file.write(
-        'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu() + '%; SWAP usage: ' +
-        Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: ' + Logger.disk() + '%; Received k/bytes: ' +
-        Logger.net() + '\r\n')
+        'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu()
+        + '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: '
+        + Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
 
 
 def execute():
