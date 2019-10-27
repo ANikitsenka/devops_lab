@@ -61,15 +61,13 @@ def json_log(j):
 def text_log(k):
     file = open('log.txt', 'a+')
     file.write(
-        'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu() +
-        '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: '
-        + Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
+        'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu() + \
+        '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: ' + \
+        Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
 
 
 def execute():
-    #    log = {}
     i = 1
-    #    s = 'SNAPSHOT'
     if config_dict['output'] == 'json':
         while True:
             json_log(i)
