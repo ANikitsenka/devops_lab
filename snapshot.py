@@ -60,10 +60,10 @@ def json_log(j):
 
 def text_log(k):
     file = open('log.txt', 'a+')
-    file.write(
-        'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu() + \
-        '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: ' + \
-        Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n')
+    a = 'SNAPSHOT N' + str(k) + ': ' + Logger.timestamp() + '; ' + 'CPU usage: ' + Logger.cpu()
+    a += '%; SWAP usage: ' + Logger.swap() + '%; Memory: ' + Logger.v_mem() + '; Disk usage: '
+    a += Logger.disk() + '%; Received k/bytes: ' + Logger.net() + '\r\n'
+    file.write(a)
 
 
 def execute():
