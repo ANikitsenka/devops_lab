@@ -20,7 +20,6 @@ else:
         if cmd[cmd.index(oldest) + 1] == 0:
             check = cmd.index(oldest)
             cmd[check] = 0
-            continue
         else:
             print(cmd.index(oldest))
             break
