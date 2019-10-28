@@ -2,7 +2,7 @@
 Simple script
 
 ## Description 
-This is script creates pc's status snapshots to json or text file.
+This script creates pc's status snapshots to json or text file.
 
 ## Usage
 Parameters of config.ini should be placed in [common] block:
