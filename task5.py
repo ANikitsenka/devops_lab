@@ -8,7 +8,7 @@ alphabet = []
 checker = 0
 
 for i in range(len(work_s) - 1):
-    if len(work_s) > 0:
+    if work_s:
         dictionary[work_s[0]] = work_s.count(work_s[0])
         work_s = work_s.replace(work_s[0], '')
     else:
