@@ -41,28 +41,21 @@ while j <= (len(cmd) - 1):
     if cmd[j] == 'insert':
         _insert(int(cmd[j + 1]), cmd[j + 2])
         j += 3
-        continue
-    if cmd[j] == 'print':
+    elif cmd[j] == 'print':
         _print()
         j += 1
-        continue
     elif cmd[j] == 'remove':
         _remove(cmd[j + 1])
         j += 2
-        continue
     elif cmd[j] == 'append':
         _append(cmd[j + 1])
         j += 2
-        continue
     elif cmd[j] == 'pop':
         _pop()
         j += 1
-        continue
     elif cmd[j] == 'sort':
         _sort()
         j += 1
-        continue
     elif cmd[j] == 'reverse':
         _reverse()
         j += 1
-        continue
