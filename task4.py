@@ -15,7 +15,7 @@ if men_s <= 0:
     print('-1')
 else:
     while iterator <= len(cmd) / 2:
-        ages = cmd[0::2]
+        ages = cmd[::2]
         oldest = max(ages)
         if cmd[cmd.index(oldest) + 1] == 0:
             check = cmd.index(oldest)
