@@ -1,0 +1,14 @@
+apache_vhosts:
+- vhost:
+  port: 80
+  servername: www.devops0.lab
+  documentroot: /www/http/folder
+  serveradmin: andrei_nikitsenka@epam.com
+  directorypath: /usr/local/httpd/htdocs
+
+- vhost:
+  port: 8080
+  servername: www.devops1.lab
+  documentroot: /www/http/folder
+  serveradmin: andrei_nikitsenka@epam.com
+  directorypath: /usr/local/httpd/htdocs
